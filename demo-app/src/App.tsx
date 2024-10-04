@@ -10,9 +10,9 @@ function App() {
             <div className="App-body">
                 <form action=".">
                     <ol>
-                        <li><input type="checkbox" />Apples</li>
-                        <li><input type="checkbox" />Bananas</li>
-                        <li><input type="checkbox" />Pears</li>
+                        {[ListItem("Apples"),
+                        ListItem("Bananas"),
+                        ListItem("Oranges")]}
                     </ol>
                 </form>
             </div>
@@ -21,5 +21,10 @@ function App() {
 }
 
 
+function ListItem(itemText: string) {
+    return (
+        <li><input type="checkbox" />{itemText}</li>
+    )
+}
 
 export default App;
