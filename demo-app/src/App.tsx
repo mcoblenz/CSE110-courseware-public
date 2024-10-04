@@ -8,14 +8,18 @@ function App() {
             {/* <header className="App-header">
             </header> */}
             <div className="App-body">
-                <ol>
-                    <li>Apples</li>
-                    <li>Bananas</li>
-                    <li>Pears</li>
-                </ol>
+                <form action=".">
+                    <ol>
+                        <li><input type="checkbox" />Apples</li>
+                        <li><input type="checkbox" />Bananas</li>
+                        <li><input type="checkbox" />Pears</li>
+                    </ol>
+                </form>
             </div>
         </div>
     );
 }
+
+
 
 export default App;
