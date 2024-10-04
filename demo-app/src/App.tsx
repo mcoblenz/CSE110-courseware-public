@@ -39,7 +39,7 @@ function App() {
             {/* <header className="App-header">
             </header> */}
             <div className="App-body">
-                Items to buy: {numRemainingItems}
+                Items bought: {numRemainingItems}
                 <form action=".">
                     <ol>
                         {items.map((item) => ListItem(item, handleCheckboxClick))}
